@@ -1,0 +1,44 @@
+:root {
+  font-family: Inter, 'Segoe UI', Roboto, sans-serif;
+  color: #432d3b;
+  background: #fff8fb;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  --pink: #d94f8b;
+  --pink-dark: #a83266;
+  --pink-soft: #fce5ef;
+  --rose-border: #f1c8d9;
+  --ink: #432d3b;
+  --muted: #856b79;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; }
+#root { min-height: 100vh; }
+h1, h2, h3 { color: var(--ink); }
+button, input, textarea { font: inherit; }
+a { color: var(--pink-dark); }
+a:hover { color: var(--pink); }
+
+input:not([type='button']), textarea {
+  width: min(420px, 90%);
+  margin: 8px auto;
+  padding: 12px 14px;
+  border: 1px solid var(--rose-border);
+  border-radius: 10px;
+  background: #fff;
+  color: var(--ink);
+}
+input:focus, textarea:focus { outline: 3px solid #f7c7dc; border-color: var(--pink); }
+input[type='button'] {
+  margin: 6px 4px;
+  padding: 10px 15px;
+  border: 0;
+  border-radius: 9px;
+  background: var(--pink);
+  color: white;
+  cursor: pointer;
+  transition: background .18s ease, transform .18s ease;
+}
+input[type='button']:hover { background: var(--pink-dark); transform: translateY(-1px); }

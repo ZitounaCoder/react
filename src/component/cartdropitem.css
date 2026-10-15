@@ -1,0 +1,21 @@
+.cartdropitem{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    border-bottom: 1px solid var(--rose-border);
+    gap: 12px;
+    align-items: center;
+}
+.cartdropitem img{
+    width: 50px;
+    height: 58px;
+    object-fit: contain;
+}
+.cartdropitem-info {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    gap: 12px;
+    
+}

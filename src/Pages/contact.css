@@ -1,0 +1,26 @@
+.contact-page {
+  display: grid;
+  place-items: center;
+  min-height: calc(100vh - 125px);
+  padding: 24px;
+}
+
+.contact-card {
+  width: min(100%, 520px);
+  padding: 34px 28px;
+  border: 1px solid #f1c8d9;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 14px 36px rgba(130, 49, 87, .12);
+  text-align: center;
+}
+
+.contact-card h1 { margin: 0 0 22px; color: #a83266; font-size: 34px; }
+.contact-card input:not([type='button']),
+.contact-card textarea { display: block; width: 100%; margin: 8px 0; }
+.contact-card textarea { resize: vertical; }
+.contact-card input[type='button'] { min-width: 120px; margin: 12px auto 0; }
+
+@media (max-width: 520px) {
+  .contact-card { padding: 28px 20px; }
+}
